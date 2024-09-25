@@ -1,0 +1,62 @@
+{
+    "env": {
+      "browser": true,
+      "es2021": true,
+      "jest": true
+    },
+    "extends": [
+      "react-app",
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:react-hooks/recommended",
+      "plugin:jsx-a11y/recommended",
+      "plugin:import/errors",
+      "plugin:import/warnings",
+      "prettier"
+    ],
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "plugins": ["react", "jsx-a11y", "import", "prettier"],
+    "rules": {
+      "prettier/prettier": ["error"],
+      "react/prop-types": "off",
+      "curly": "error",
+    "func-style": ["error"],
+    "no-else-return": "error",
+    "no-unneeded-ternary": "error",
+    "no-use-before-define": "error",
+    "no-var": "error",
+    "object-shorthand": ["error", "always"],
+    "prefer-const": "error",
+    "react-hooks/exhaustive-deps": "error",
+    "react/hook-use-state": "error",
+    "react/jsx-sort-props": "error",
+    "react/no-array-index-key": "error",
+    "react/no-unused-prop-types": "error",
+    "react/sort-default-props": "error",
+    "react/sort-prop-types": "error",
+    "sort-keys": ["error", "asc", {
+      "allowLineSeparatedGroups": true,
+      "natural": true
+    }],
+    "react/react-in-jsx-scope": "off"
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      },
+      "import/resolver": {
+      "alias": {
+        "map": [
+          ["@styles", "./src/styles"]  // Adjust as necessary
+        ],
+        "extensions": [".js", ".jsx", ".ts", ".tsx", ".scss"]
+      }
+    }
+    }
+  }
